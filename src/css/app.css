@@ -1,0 +1,174 @@
+#root {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+}
+#root ul {
+	list-style-type: none;
+}
+
+#root .container {
+	width: 30em;
+	z-index: 100;
+	background: white;
+	border-radius: 2em;
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.9);
+}
+
+#root .container-view {
+	padding: 1em;
+	background-color: rgb(245, 237, 237);
+	min-height: 43.5em;
+}
+
+.container-view ul {
+	width: 100%;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+.call {
+	background-color: white;
+	border: 0.2em solid rgb(221, 217, 217);
+	border-radius: 1em;
+	height: 4em;
+	margin-top: 1em;
+	overflow: hidden;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 0.5em;
+	cursor: pointer;
+	transition: all ease 1s;
+}
+.call:hover {
+	border-color: dodgerblue;
+}
+.call .to,
+.time {
+	color: rgb(138, 135, 135);
+}
+.call-column {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.time {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.time span {
+	border: 0.02em solid rgb(221, 217, 217);
+	padding: 0.1em;
+	right: 0;
+	margin-left: 0.3em;
+}
+
+.buttons {
+	display: flex;
+	width: 100%;
+	height: 4em;
+	justify-content: space-between;
+}
+button {
+	height: 100%;
+	width: 45%;
+	cursor: pointer;
+	border-radius: 1em;
+	outline: none;
+}
+.reset {
+	margin-top: 1em;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+}
+.reset button {
+	height: 3em;
+	width: 30%;
+}
+button:hover {
+	background-color: dodgerblue;
+}
+.bg-blue {
+	background-color: dodgerblue;
+}
+
+.reset p {
+	color: dodgerblue;
+}
+footer {
+	height: 4.5em;
+}
+footer > div {
+	height: 100%;
+	width: 100%;
+}
+footer ul {
+	padding: 0 1em 0 1em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0;
+	height: 100%;
+}
+footer i {
+	font-size: 1.5em;
+	cursor: pointer;
+	transition: all ease 0.5s;
+}
+footer i:hover {
+	color: dodgerblue;
+}
+footer li:last-child {
+	color: green;
+}
+.dial {
+	border-radius: 100%;
+	border: 0.02em solid rgb(187, 187, 187);
+	padding: 0.5em;
+	margin-top: -2em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 2;
+	background-color: white;
+}
+.dial > div {
+	width: 4em;
+	height: 4em;
+	background-color: rgb(53, 238, 53);
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.dial i {
+	color: white;
+	font-size: 1.9em;
+}
+.count {
+	display: flex;
+}
+.count > div {
+	padding: 0.1em 0.5em 0.1em 0.5em;
+	height: 1.5em;
+	background-color: red;
+	color: white;
+	border-radius: 2em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: -1em 0 0 -0.6em;
+}
+img {
+	height: 2em;
+	width: 2em;
+}
